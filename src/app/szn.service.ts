@@ -8,6 +8,7 @@ export class SznService {
   private _sznbs: BehaviorSubject<any> = new BehaviorSubject<any>(null);
   public config: any = {};
   constructor() {
+    // koment
     let config = localStorage.getItem('szn_config');
     if (config) {
       this.config = JSON.parse(config);
